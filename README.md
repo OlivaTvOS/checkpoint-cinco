@@ -6,11 +6,11 @@ Projeto do Checkpoint 5 de Front-end Design Engineering, turma 1TDSPI.
 
 | Nome | RM |
 | --- | --- |
-| PREENCHER | PREENCHER |
+| Artur da Silva de Oliveira | 569870 |
 
-Repositório no GitHub: PREENCHER.
+Repositório no GitHub: https://github.com/OlivaTvOS/checkpoint-cinco
 
-Antes de entregar, coloque os nomes, RMs e fotos reais em `src/pages/Sobre.tsx`, salve as fotos em `public/imagens` e complete esta tabela e o link acima.
+Antes de entregar, adicione a foto de Artur em `public/imagens` e preencha o campo `foto` em `src/pages/Sobre.tsx`.
 
 ## Como executar
 
