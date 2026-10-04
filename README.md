@@ -45,17 +45,9 @@ O cabeçalho mostra a quantidade de carros aguardando. A lista fica no contexto 
 - `src/pages`: Home, Agendamentos e Sobre.
 - `src/types/types.ts`: tipo dos dados das lavagens.
 
-Estilização com classes do Tailwind CSS. Ícones do React Icons, apresentado na apostila 20. Cadastro e exclusão usam estado, eventos, props, `map` e `filter`, como no exercício de tarefas. A apostila 19 não estava no ZIP recebido; o modelo de rotas foi conferido na página 5 da apostila 23.
-
 ## Imagens
 
-A fotografia principal veio da pasta `mid` do projeto original no Drive. As duas fotos dos depoimentos são ilustrativas, do Unsplash:
+As duas fotos dos depoimentos são ilustrativas, do Unsplash:
 
 - https://images.unsplash.com/photo-1494976388531-d1058494cdd8
 - https://images.unsplash.com/photo-1503376780353-7e6692767b70
-
-Os depoimentos são fictícios para a demonstração acadêmica.
-
-## Histórico
-
-O primeiro commit preserva a base recuperada do Drive. Os demais registram as etapas reais de recuperação e implementação, sem alteração artificial de datas. O histórico antigo perdido não foi recuperado.
