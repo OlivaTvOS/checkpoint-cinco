@@ -1,75 +1,61 @@
-# React + TypeScript + Vite
+# Lava Lento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto do Checkpoint 5 de Front-end Design Engineering, turma 1TDSPI.
 
-Currently, two official plugins are available:
+## Integrantes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Nome | RM |
+| --- | --- |
+| PREENCHER | PREENCHER |
 
-## React Compiler
+Repositório no GitHub: PREENCHER.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Antes de entregar, coloque os nomes, RMs e fotos reais em `src/pages/Sobre.tsx`, salve as fotos em `public/imagens` e complete esta tabela e o link acima.
 
-## Expanding the ESLint configuration
+## Como executar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Com Node.js compatível com Vite 8 instalado:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm ci
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Abra o endereço mostrado no terminal. Para conferir o projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run build
+npm run lint
 ```
+
+## Páginas
+
+- Home: apresentação do lava-rápido, serviços e depoimentos ilustrativos.
+- Agendamentos: formulário com cliente, modelo, placa e lavagem; criação e exclusão de tíquetes.
+- Sobre: apresentação e identificação dos integrantes.
+
+O cabeçalho mostra a quantidade de carros aguardando. A lista fica no contexto e é compartilhada pelas páginas. Trocar de página pelo menu mantém os agendamentos; recarregar ou fechar a página limpa a lista. Não há banco de dados.
+
+## Organização
+
+- `src/main.tsx`: `createBrowserRouter`, `RouterProvider` e rotas filhas, conforme a apostila 23.
+- `src/App.tsx`: cabeçalho, `Outlet`, rodapé e provider do contexto.
+- `src/context/LavagemContext.ts`: `createContext`, `createElement` e `useState`, seguindo o exemplo da apostila 23.
+- `src/components`: formulário, tíquete, depoimentos, cabeçalho e rodapé.
+- `src/pages`: Home, Agendamentos e Sobre.
+- `src/types/types.ts`: tipo dos dados das lavagens.
+
+Estilização com classes do Tailwind CSS. Ícones do React Icons, apresentado na apostila 20. Cadastro e exclusão usam estado, eventos, props, `map` e `filter`, como no exercício de tarefas. A apostila 19 não estava no ZIP recebido; o modelo de rotas foi conferido na página 5 da apostila 23.
+
+## Imagens
+
+A fotografia principal veio da pasta `mid` do projeto original no Drive. As duas fotos dos depoimentos são ilustrativas, do Unsplash:
+
+- https://images.unsplash.com/photo-1494976388531-d1058494cdd8
+- https://images.unsplash.com/photo-1503376780353-7e6692767b70
+
+Os depoimentos são fictícios para a demonstração acadêmica.
+
+## Histórico
+
+O primeiro commit preserva a base recuperada do Drive. Os demais registram as etapas reais de recuperação e implementação, sem alteração artificial de datas. O histórico antigo perdido não foi recuperado.
