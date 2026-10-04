@@ -20,11 +20,39 @@ function Home() {
         </figure>
       </section>
       <section className="mx-auto max-w-7xl px-5 pb-16" aria-labelledby="servicos">
-        <div className="mb-7 flex flex-wrap items-end justify-between gap-3"><h2 id="servicos" className="text-2xl font-semibold">Um banho para cada necessidade.</h2><span className="text-sm text-zinc-400">Você escolhe o cuidado.</span></div>
+
+        <div className="mb-7 flex flex-wrap items-end justify-between gap-3"><h2 id="servicos" className="text-2xl font-semibold">Um banho para cada necessidade.</h2>
+        
+        <span className="text-sm text-zinc-400">Você escolhe o cuidado.</span>
+        
+        </div>
         <div className="grid gap-5 md:grid-cols-3">
-          <article className="rounded-xl border border-zinc-800 p-6"><FiDroplet className="mb-4 text-2xl text-blue-400" aria-hidden="true" /><h3 className="text-xl font-semibold">Simples</h3><p className="mt-3 leading-relaxed text-zinc-400">Lavagem externa para tirar a sujeira do dia a dia e renovar o visual.</p></article>
-          <article className="rounded-xl border border-blue-800 bg-blue-950 p-6"><FiCheckCircle className="mb-4 text-2xl text-blue-300" aria-hidden="true" /><h3 className="text-xl font-semibold">Completa</h3><p className="mt-3 leading-relaxed text-blue-100">Limpeza por dentro e por fora, com atenção aos cantinhos que fazem diferença.</p></article>
-          <article className="rounded-xl border border-zinc-800 p-6"><FiSun className="mb-4 text-2xl text-blue-400" aria-hidden="true" /><h3 className="text-xl font-semibold">Com cera</h3><p className="mt-3 leading-relaxed text-zinc-400">Lavagem e aplicação de cera para deixar a pintura com aquele brilho a mais.</p></article>
+          <article className="rounded-xl border border-zinc-800 p-6">
+            
+            <FiDroplet className="mb-4 text-2xl text-blue-400" aria-hidden="true" />
+            
+            <h3 className="text-xl font-semibold">Simples</h3>
+            
+            <p className="mt-3 leading-relaxed text-zinc-400">Lavagem externa para tirar a sujeira do dia a dia e renovar o visual.</p>
+            
+            </article>
+          
+          <article className="rounded-xl border border-blue-800 bg-blue-950 p-6">
+            
+            <FiCheckCircle className="mb-4 text-2xl text-blue-300" aria-hidden="true" />
+            
+            <h3 className="text-xl font-semibold">Completa</h3>
+            
+            <p className="mt-3 leading-relaxed text-blue-100">Limpeza por dentro e por fora, com atenção aos cantinhos que fazem diferença.</p>
+            
+            </article>
+          <article className="rounded-xl border border-zinc-800 p-6">
+            
+            <FiSun className="mb-4 text-2xl text-blue-400" aria-hidden="true" /><h3 className="text-xl font-semibold">Com cera</h3>
+            
+            <p className="mt-3 leading-relaxed text-zinc-400">Lavagem e aplicação de cera para deixar a pintura com aquele brilho a mais.</p>
+            
+            </article>
         </div>
       </section>
       <Depoimentos />

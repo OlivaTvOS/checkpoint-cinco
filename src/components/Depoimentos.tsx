@@ -22,7 +22,7 @@ function Depoimentos() {
             </article>
           ))}
         </div>
-        <p className="mt-5 text-xs text-zinc-500">Depoimentos fictícios e fotos ilustrativas para este projeto acadêmico.</p>
+        <p className="mt-5 text-xs text-zinc-500">Checkpoint 5.</p>
       </div>
     </section>
   )
